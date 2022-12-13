@@ -8,16 +8,30 @@ body {
     height: 100vh;
     background: #000;
 }
- 
+
 p{
     font-size: 8.5px;
     line-height: 8.5px;
-    background: url(chae.jpg);
+    background-image: url(chae.jpg);
     background-attachment: fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0.01);
     background-size: 55%;
+    width: auto;
     background-repeat: no-repeat;
     background-position: top;
     letter-spacing: 0.2px;
+    text-align: justify;
+}
+
+@media screen and (min-width: 500px){
+    p{
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    p {
+        background-size: cover;
+    }
 }
